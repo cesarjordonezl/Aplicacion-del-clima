@@ -1,0 +1,80 @@
+
+
+body {
+    background-image: url('/clima1.jpg'); /* Ruta de la imagen en relación con la carpeta public */
+    background-size: cover; /* se Ajusta el tamaño de la imagen para cubrir todo el fondo */
+    background-repeat: no-repeat; /*  se Evita la repetición de la imagen */
+    background-attachment: fixed; /*  se Fija la imagen de fondo */
+    
+  }
+  
+ 
+
+  
+  h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  
+  
+  
+  
+  span {
+    vertical-align: auto;
+    font-style: roman;
+    color: black;
+  }
+  @media(min-width: 768px){.caja {
+  width: 400px; /* Cambia el ancho  */
+  height: 600px; /* Cambia la altura  */
+  background-color: white;
+  text-align: center;
+  border: 2px solid #333;
+  border-radius: 10px;
+   }
+}
+
+.columnas {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); /* Cambiar el número de columnas. */
+    gap: 3px; /* Espacio entre columnas */
+    list-style: none;
+    padding: 0;
+  }
+  
+  /* Estilos opcionales para los elementos <li> */
+  .columnas li {
+    background-color: white;
+    padding: 10px;
+    border: 0px solid #ccc;
+  }
+  
+    
+      
+
+  .bto-cambio{
+    
+        background-color: gray;
+        color: #ffffff;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+        border-radius: .3rem;
+        transition: background-color 0.3s ease; /* Transición suave para el cambio de color */
+      }
+      
+      .bto-cambio:hover {
+        background-color: green; /* Color cuando se pasa el cursor */
+      }
+      
+      .bto-cambio:focus {
+        outline: none; /* Elimina el borde al hacer clic en el botón */
+      }
+      
+      /* Estilos adicionales  */
+      .bto-cambio:hover {
+        transform: scale(1.05); /* Escalar ligeramente cuando se pasa el cursor */
+        box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3); /* Sombra cuando se pasa el cursor */
+      }
+      
